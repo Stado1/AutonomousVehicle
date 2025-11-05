@@ -38,3 +38,7 @@ The background of the track is white and the obstacles are black. So if a pixel 
 | Backward     | 0  | 1  | 0  |
 
 
+### Video
+I have amde a video of the simulation but it is very laggy. I have filmed it on an old computer and recording it affects the simulation, so I had to slow down the robot which is why I only filmed the beginning otherwise the video would be very long.
+https://youtu.be/BDTm4AGKvkM
+
