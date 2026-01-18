@@ -13,7 +13,9 @@ The software used for this project:
 
 ### How to run
 First install TurtleBot3 and OpenCV with APT. 
-Open a new terminal, and go the Autonomous vehicle folder. There use command: "colcon build". Then use the command "source install/setup.bash". Then use then command: "ros2 launch my_world_pkg world_with_trutlebot.launch.py". This opens a Gazebo world with the parkour in it. See image. ![Logo](images/ParkourScreenshot.png)
+Open a new terminal, and go the Autonomous vehicle folder. There use command: "colcon build". Then use the command "source install/setup.bash". Then use then command: "ros2 launch my_world_pkg world_with_trutlebot.launch.py". This opens a Gazebo world with the parkour in it. See image. 
+
+![Logo](images/ParkourScreenshot.png)
 
 Now open a new terminal, and go the Autonomous vehicle folder. Then use the command "source install/setup.bash". Then use the command "ros2 run velocity_control_pkg velocity_control". This will make de robot drive and follow the track.
 
@@ -22,7 +24,9 @@ If you also want to see what the camera sees then do this: Now open a new termin
 
 ### How does the navigation system work
 The navigation system works by checking 3 pixels of the camera footage every 60 miliseconds, a center pixel, a left pixel and a right pixel.
-The pixels positions can be seen in the image, the red, blue and green dot. ![Logo](images/cameraFeedScreenshot.png)
+The pixels positions can be seen in the image, the red, blue and green dot.
+
+![Logo](images/cameraFeedScreenshot.png)
 
 The background of the track is white and the obstacles are black. So if a pixel value changes from white to black then it means that there is an obstacle in that position. In the following table all the actions with corresponding pixel values can be seen. LP = left pixel, RP = right pixel, CP = center pixel, 0 = no obstacle, 1 = obstacle.
 
@@ -39,6 +43,6 @@ The background of the track is white and the obstacles are black. So if a pixel 
 
 
 ### Video
-I have amde a video of the simulation but it is very laggy. I have filmed it on an old computer and recording it affects the simulation, so I had to slow down the robot which is why I only filmed the beginning otherwise the video would be very long.
-https://youtu.be/BDTm4AGKvkM
+I have made a video of how to run the simulation and the beginning of the parkour. I have filmed using my phone instead of a screen recording because otherwise my computer would start lagging. 
+https://youtu.be/qNvYVznD5ho
 
